@@ -1,0 +1,431 @@
+<% include layout/header.ejs %>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <!--cột trái-->
+        <div class="col-md-2">
+          <div class="list-group shadow-sm small mb-3">
+            <div class="list-group-item active">Employee data</div>
+            <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#add_employee">
+              Add Employee
+            </a>
+            <a href="/dash" class="list-group-item list-group-item-action" >
+              View Employees
+            </a>
+          </div>
+
+          <div class="list-group shadow-sm small mb-3">
+              <div class="list-group-item active">
+                  Related Links
+              </div>
+              <a href="/jobs" class="list-group-item list-group-item-action">
+                Jobs List
+              </a>
+          </div>
+        </div>
+
+
+        <!--cột phải-->
+        <div class="col-md-8">
+          <div class="card shadow-sm border-0 mb-3">
+            <div class="card-header text-bg-dark text-center">Employee List</div>
+            <!--   table>(tr>th*7)+(tr>td*7)-->
+            <table class="table table-sm small table-bordered table align-middle mb-0">
+              <tr class="table-secondary">
+                <th>ID</th>
+                <th>Employee</th>
+                <th>Name</th>
+                <th>Email ID</th>
+                <th>Details</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+              <!--Staf 1-->
+              <tr>
+                <td>1</td>
+                <td>741</td>
+                <td>Vũ Nguyễn Quốc Huy</td>
+                <td>Vunguyenquochuy@gmail.com</td>
+                <td>
+                  <a href="" class="btn btn-sm btn-primary d-grid" data-bs-toggle="modal" data-bs-target="#employee_details">Details</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-warning d-grid" data-bs-toggle="modal" data-bs-target="#employee_edit">Edit</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-danger d-grid" data-bs-toggle="modal" data-bs-target="#employee_delete">Delete</a>
+                </td>
+              </tr>
+              <!--Staf 2-->
+              <tr>
+                <td>2</td>
+                <td>742</td>
+                <td>Nguyễn Quốc Huy</td>
+                <td>Vunguyenquochuy@gmail.com</td>
+                <td>
+                  <a href="" class="btn btn-sm btn-primary d-grid" data-bs-toggle="modal" data-bs-target="#employee_details">Details</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-warning d-grid" data-bs-toggle="modal" data-bs-target="#employee_edit">Edit</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-danger d-grid" data-bs-toggle="modal" data-bs-target="#employee_delete">Delete</a>
+                </td>
+              </tr>
+              <!--Staf 3-->
+              <tr>
+                <td>3</td>
+                <td>743</td>
+                <td>Phan Đức Thanh Duy</td>
+                <td>Vunguyenquochuy@gmail.com</td>
+                <td>
+                  <a href="" class="btn btn-sm btn-primary d-grid" data-bs-toggle="modal" data-bs-target="#employee_details">Details</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-warning d-grid" data-bs-toggle="modal" data-bs-target="#employee_edit">Edit</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-danger d-grid" data-bs-toggle="modal" data-bs-target="#employee_delete">Delete</a>
+                </td>
+              </tr>
+              <!--Staf 4-->
+              <tr>
+                <td>4</td>
+                <td>744</td>
+                <td>Trần Ngọc Bảo</td>
+                <td>Vunguyenquochuy@gmail.com</td>
+                <td>
+                  <a href="" class="btn btn-sm btn-primary d-grid" data-bs-toggle="modal" data-bs-target="#employee_details">Details</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-warning d-grid" data-bs-toggle="modal" data-bs-target="#employee_edit">Edit</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-danger d-grid" data-bs-toggle="modal" data-bs-target="#employee_delete">Delete</a>
+                </td>
+              </tr>
+              <!--Staf 5-->
+              <tr>
+                <td>5</td>
+                <td>745</td>
+                <td>Trần Thái Vân Anh</td>
+                <td>Vunguyenquochuy@gmail.com</td>
+                <td>
+                  <a href="" class="btn btn-sm btn-primary d-grid" data-bs-toggle="modal" data-bs-target="#employee_details">Details</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-warning d-grid" data-bs-toggle="modal" data-bs-target="#employee_edit">Edit</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-danger d-grid" data-bs-toggle="modal" data-bs-target="#employee_delete">Delete</a>
+                </td>
+              </tr>
+              <!--Staf 6-->
+              <tr>
+                <td>6</td>
+                <td>746</td>
+                <td>Trần Ngọc Bảo</td>
+                <td>Vunguyenquochuy@gmail.com</td>
+                <td>
+                  <a href="" class="btn btn-sm btn-primary d-grid" data-bs-toggle="modal" data-bs-target="#employee_details">Details</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-warning d-grid" data-bs-toggle="modal" data-bs-target="#employee_edit">Edit</a>
+                </td>
+                <td>
+                  <a href="" class="btn btn-sm btn-danger d-grid" data-bs-toggle="modal" data-bs-target="#employee_delete">Delete</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </div>
+  </div>
+
+<!--thông báo-->
+<div class="modal fade" id="add_employee" data-bs-backdrop="static" tabindex="-1" aria-hidden="true"
+style="backdrop-filter: blur(5px);">
+<div class="modal-dialog modal-dialog-centered">
+  <!-- .modal-content>(.modal-header.text-bg-dark+.modal-body)-->
+  <div class="modal-content">
+    <div class="modal-header text-bg-dark">
+      <h5 class="modal-title">Add Employee Details</h5>
+      <button class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form action="">
+        
+          <div class="container">
+            <div class="row gx-3">
+              <input
+                type="date"
+                class="form-control form-control-sm mb-3 col-md-12 "  required 
+              />
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-sm " required placeholder="First Name"
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-sm " required placeholder="Last Name"
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-sm " required placeholder="Email ID"
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input
+                  type="tel"
+                  class="form-control form-control-sm " required placeholder="Phone Number"
+                />
+              </div>
+              <div class="col-md-12 mb-3">
+                <select class="form-select form-select-sm" aria-label="Job Assigned">
+                  <option selected>Selected job for employee</option>
+                  <option value="Graphic Designer">Graphic Designer</option>
+                  <option value="Web Designe">Web Designer</option>
+                  <option value="Web Developer">Web Developer</option>
+                  <option value="Digital Marketer">Digital Marketer</option>
+                </select>
+              </div>
+
+              
+              <div class="col-md-10 d-grid">
+                  <button type="submit" class="btn btn-sm btn-success">Add Employee</button>
+              </div>
+
+              <div class="col-md-2 d-grid">
+                <button type="submit" class="btn btn-sm btn-warning" data-bs-dismiss="modal" aria-label="Close">Close</button>
+              </div>
+            </div>
+        </div>
+        </div>  
+  </div>
+</div>
+</div>
+
+<!--DETAILS-->
+<div class="modal fade" id="employee_details" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" 
+style="backdrop-filter: blur(5px);" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header text-bg-dark">
+          Employee Details
+        </div>
+        <div class="modal-body p-0">
+          <!-- table>tr*8>th+td -->
+          <table class="table table-bordered">
+            <tr>
+              <th>ID</th>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Employee ID</th>
+              <td>741</td>
+            </tr>
+            <tr>
+              <th>Frist Name</th>
+              <td>Huy</td>
+            </tr>
+            <tr>
+              <th>Last Name</th>
+              <td>Vũ</td>
+            </tr>
+            <tr>
+              <th>Email ID</th>
+              <td>Vunguyenquochuy@gmail.com</td>
+            </tr>
+            <tr>
+              <th>Phone Number</th>
+              <td>0938628450</td>
+            </tr>
+            <tr>
+              <th>Huy</th>
+              <td>Graphic Designer</td>
+            </tr>
+            <tr>
+              <th>Joinning Date</th>
+              <td>22nd July,2024</td>
+            </tr>
+            
+          </table>
+        </div>
+        <div class="modal-footer">
+          <a href="" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#employee_edit">
+            Edit Details
+          </a>
+          <a href="" class="btn btn-sm btn-primary" data-bs-dismiss="modal" aria-label="Close">
+            Close
+          </a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!--EDIT-->
+<!-- <div class="modal-fade" id="employee_edit" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" 
+style="backdrop-filter: blur(5px);">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text-bg-dark">
+        <h5 class="modal-title">Edit Employee</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <form action="">
+            <div class="container">
+              <div class="row gx-3">
+                <input
+                  type="date"
+                  class="form-control form-control-sm mb-3 col-md-12 "  required  value="2009-12-09"
+                />
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control form-control-sm " required placeholder="First Name " value="Huy"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control form-control-sm " required placeholder="Last Name" value="Vũ"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="email"
+                    class="form-control form-control-sm " required placeholder="Email ID" value="Vunguyenquochuy@gmail.com"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="tel"
+                    class="form-control form-control-sm " required placeholder="Phone Number" value="0938268450"
+                  />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <select class="form-select form-select-sm" aria-label="Job Assigned">
+                    <option selected>Selected job for employee</option>
+                    <option value="Graphic Designer" selected>Graphic Designer</option>
+                    <option value="Web Designe">Web Designer</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Digital Marketer">Digital Marketer</option>
+                  </select>
+                </div>
+
+                
+                <div class="col-md-10 d-grid">
+                    <button type="submit" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#employee_edit">Save</button>
+                </div>
+
+                <div class="col-md-2 d-grid">
+                  <button type="submit" class="btn btn-sm btn-warning" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+              </div>
+          </div>
+      </div>  
+    </div>
+  </div>
+</div> -->
+<div class="modal fade" id="employee_edit" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" 
+style="backdrop-filter: blur(5px);" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header text-bg-dark">
+          Edit Employee
+        </div>
+        <div class="modal-body ">
+          <form action="">
+              <div class="container">
+                <div class="row gx-3">
+                  <input
+                    type="date"
+                    class="form-control form-control-sm mb-3 col-md-12 "  required  value="2009-12-09"
+                  />
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm " required placeholder="First Name " value="Huy"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm " required placeholder="Last Name" value="Vũ"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="email"
+                      class="form-control form-control-sm " required placeholder="Email ID" value="Vunguyenquochuy@gmail.com"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="tel"
+                      class="form-control form-control-sm " required placeholder="Phone Number" value="0938268450"
+                    />
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <select class="form-select form-select-sm" aria-label="Job Assigned">
+                      <option selected>Selected job for employee</option>
+                      <option value="Graphic Designer" selected>Graphic Designer</option>
+                      <option value="Web Designe">Web Designer</option>
+                      <option value="Web Developer">Web Developer</option>
+                      <option value="Digital Marketer">Digital Marketer</option>
+                    </select>
+                  </div>
+  
+                  
+                  <div class="col-md-10 d-grid">
+                      <button type="submit" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#employee_edit">Save</button>
+                  </div>
+  
+                  <div class="col-md-2 d-grid">
+                    <button type="submit" class="btn btn-sm btn-warning" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                  </div>
+
+                </div>
+            </div>
+        </div> 
+    
+    </div>
+  </div>
+</div>
+
+
+ <!--DELETE-->
+<div class="modal fade" id="employee_delete" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" 
+style="backdrop-filter: blur(5px);">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header text-bg-dark">
+      <h5 class="modal-title">Delete Employee</h5>
+      <button class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+<div class="modal-body text-center d-flex justify-content-between align-items-center p-3">
+  <h4 class="fw-light m-0">
+    Do you want to delete
+    <strong><q>Vũ Nguyễn Quốc Huy</q></strong>
+    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+  </h4>
+</div>
+<div class="modal-footer d-flex justify-content-center">
+  <button type="submit" class="btn btn-sm btn-danger">YES!</button>
+  <button type="submit" class="btn btn-sm btn-warning" data-bs-dismiss="modal" aria-label="Close">No, go back!</button>
+
+</div>
+</div>
+</div>
+</div>
+
+<% include layout/footer.ejs %>
+
+    
